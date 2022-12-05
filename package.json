@@ -4,8 +4,9 @@
   "license": "MIT",
   "scripts": {
     "start": "nx serve",
-    "build": "nx build",
-    "test": "nx test"
+    "build": "yarn nx run-many --target=build --all --prod",
+    "test": "CI=true nx run-many --all --target=test --coverage --colors",
+    "prepare": "husky install"
   },
   "private": true,
   "dependencies": {
@@ -39,8 +40,10 @@
     "eslint-plugin-jsx-a11y": "6.6.1",
     "eslint-plugin-react": "7.31.8",
     "eslint-plugin-react-hooks": "4.6.0",
+    "husky": "^8.0.2",
     "jest": "28.1.1",
     "jest-environment-jsdom": "28.1.1",
+    "lint-staged": "^13.1.0",
     "nx": "15.2.4",
     "prettier": "^2.6.2",
     "react-test-renderer": "18.2.0",
