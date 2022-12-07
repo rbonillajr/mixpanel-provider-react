@@ -1,4 +1,15 @@
 {
   "name": "mixpanel-provider-react",
-  "version": "0.0.1"
+  "version": "0.0.2",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rbonillajr/mixpanel-provider-react.git"
+  },
+  "contributors": [],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rbonillajr/mixpanel-provider-react/issues"
+  },
+  "homepage": "https://github.com/rbonillajr/mixpanel-provider-react"
 }
